@@ -1,0 +1,131 @@
+{% extends "base.html" %} 
+
+
+{% block content %}
+
+<!-- ########################################################### -->
+<!-- 1st DIV  -->
+<style>
+  #grad1 {
+    background-image: url("{{ url_for('static', filename='back_img.jpg') }}");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #2494a3;
+    
+  }
+</style>
+
+<div class="container-fluid container" id="grad1"  
+  style="text-align: justify; text-justify: inter-word; margin-top: 15px;
+  width: 90%; border: 3px solid rgb(12, 12, 12);">
+<h3 class="text-center">What can I do to lower my risk of heart disease?</h3> 
+<div style="margin: 2rem;">
+  <ul>
+    <li> <strong>Control your blood pressure. </strong> 
+      High blood pressure is a major risk factor for heart disease. It is important to get your 
+      blood pressure checked regularly - at least once a year for most adults, and more often if 
+      you have high blood pressure. Take steps, including lifestyle changes, to prevent or control 
+      high blood pressure.
+    </li>
+    <li> <strong>Keep your cholesterol and triglyceride levels under control. </strong>
+      High levels of cholesterol can clog your arteries and raise your risk of coronary artery disease 
+      and heart attack. Lifestyle changes and medicines (if needed) can lower your cholesterol. 
+      Triglycerides are another type of fat in the blood. High levels of triglycerides may also raise 
+      the risk of coronary artery disease, especially in women.
+    </li>
+    <li> <strong>Stay at a healthy weight. </strong>
+      Being overweight or having obesity can increase your risk for heart disease. This is mostly because 
+      they are linked to other heart disease risk factors, including high blood cholesterol and 
+      triglyceride levels, high blood pressure, and diabetes. Controlling your weight can lower these risks.
+    </li>
+    <li> <strong>Eat a healthy diet. </strong>
+      Try to limit saturated fats, foods high in sodium, and added sugars. Eat plenty of fresh fruit, 
+      vegetables, and whole grains. The DASH diet is an example of an eating plan that can help you 
+      to lower your blood pressure and cholesterol, two things that can lower your risk of heart disease.
+    </li> <strong>Get regular exercise. </strong>
+    Exercise has many benefits, including strengthening your heart and improving your circulation. 
+    It can also help you maintain a healthy weight and lower cholesterol and blood pressure. All 
+    of these can lower your risk of heart disease.
+    <li> <strong>Limit alcohol. </strong>
+      Drinking too much alcohol can raise your blood pressure. It also adds extra calories, which may 
+      cause weight gain. Both of those raise your risk of heart disease. Men should have no more than 
+      two alcoholic drinks per day, and women should not have more than one.
+    </li>
+  
+    <li> <strong>Don't smoke. </strong>
+      Cigarette smoking raises your blood pressure and puts you at higher risk for heart attack and stroke. 
+      If you do not smoke, do not start. If you do smoke, quitting will lower your risk for heart disease. 
+      You can talk with your health care provider for help in finding the best way for you to quit.
+    </li>
+    <li> <strong>Manage stress. </strong>
+      Stress is linked to heart disease in many ways. It can raise your blood pressure. Extreme stress can 
+      be a "trigger" for a heart attack. Also, some common ways of coping with stress, such as overeating, 
+      heavy drinking, and smoking, are bad for your heart. Some ways to help manage your stress include 
+      exercise, listening to music, focusing on something calm or peaceful, and meditating.
+    </li>
+    <li> <strong>Manage diabetes. </strong>
+      Having diabetes doubles your risk of diabetic heart disease. That is because over time, high 
+      blood sugar from diabetes can damage your blood vessels and the nerves that control your heart 
+      and blood vessels. So, it is important to get tested for diabetes, and if you have it, to keep 
+      it under control.
+    </li>
+    <li> <strong>Make sure that you get enough sleep. </strong>
+      If you don't get enough sleep, you raise your risk of high blood pressure, obesity, and diabetes. 
+      Those three things can raise your risk for heart disease. Most adults need 7 to 9 hours of sleep 
+      per night. Make sure that you have good sleep habits. If you have frequent sleep problems, contact 
+      your health care provider. One problem, sleep apnea, causes people to briefly stop breathing many 
+      times during sleep. This interferes with your ability to get a good rest and can raise your risk of 
+      heart disease. If you think you might have it, ask your doctor about having a sleep study. And if 
+      you do have sleep apnea, make sure that you get treatment for it. 
+    </li>
+  </ul>
+</div>
+
+
+</div>
+<!-- ########################################################### -->
+
+<!-- ########################################################### -->
+<!-- 4th DIV  -->
+<style>
+    .img{
+      width: 60%;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+      filter: drop-shadow(7px 7px 7px #222);
+    }
+  </style>
+  <div class="container-fluid text-center bg-grey" style="margin: 2rem;">
+    <div class="row text-center" >
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img class="img" src="static\foot_1.jpg" alt="Paris">
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img class="img" src="static\foot_2.jpg" alt="New York">
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img class="img" src="static\foot_3.jpg" alt="San Francisco">
+        </div>
+      </div>
+  </div>
+  <!-- ########################################################### -->
+
+<!-- ########################################################### -->
+<!-- Footer -->    
+<div class="container">
+  <footer class="text-center" style="background-color: #2d2d30; color: #f5f5f5; padding: 20px; border-radius: 2rem;">
+    <a class="btn btn-primary" href="{{url_for('home')}}" role="button">Home</a>
+    <a class="btn btn-primary" href="{{url_for('types')}}" role="button">Types</a>
+    <a class="btn btn-primary" href="{{url_for('predictheartdisease')}}" role="button">Predict heart disease</a>
+    <a class="btn btn-primary" href="{{url_for('prevention')}}" role="button">Prevention</a>
+    <p style="padding: 0.5em;">Made By rv enterprice</p>
+  </footer>
+</div>        
+<!-- ########################################################### -->
+
+{% endblock %}
